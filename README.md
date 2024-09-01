@@ -33,7 +33,7 @@ Este projeto realiza a análise de vendas a partir de uma base de dados em Excel
 
 O notebook `main.ipynb` realiza as seguintes análises:
 
-1. Carrega os dados de vendas do arquivo [`vendas.xlsx`].
+1. Carrega os dados de vendas do arquivo `vendas.xlsx`.
 
     ```python
     import pandas as pd
