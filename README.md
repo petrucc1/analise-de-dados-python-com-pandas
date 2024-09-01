@@ -34,12 +34,14 @@ Este projeto realiza a análise de vendas a partir de uma base de dados em Excel
 O notebook `main.ipynb` realiza as seguintes análises:
 
 1. Carrega os dados de vendas do arquivo [`vendas.xlsx`].
+
     ```python
     import pandas as pd
     tabela = pd.read_excel("vendas.xlsx")
     display(tabela)
     ```
 2. Agrupa os dados por loja e produto, calculando o faturamento total por produto em cada loja.
+
     ```python
     faturamento_por_produto = tabela[["ID Loja", "Produto", "Valor Final"]].groupby(["ID Loja", "Produto"]).sum()
     display(faturamento_por_produto)
